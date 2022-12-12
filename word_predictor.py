@@ -36,7 +36,7 @@ if __name__ == "__main__":
                               lambda sentence: ("".join(char.lower() for char in word if char in char_set) for word in
                                                 sentence.split()))
     print("Training...")
-    predictor.train_from_file("../corpus.txt")
+    predictor.train_from_file("steam_descriptions.txt")
     print("Done!")
     while True:
         prompt = input(">")
